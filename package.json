@@ -1,0 +1,23 @@
+{
+  "name": "mi-app-leaflet",
+  "version": "1.0.0",
+  "description": "Aplicación de mapas interactivos con Leaflet",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server"
+  },
+  "keywords": [
+    "leaflet",
+    "maps",
+    "mapas",
+    "gis",
+    "geolocation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}

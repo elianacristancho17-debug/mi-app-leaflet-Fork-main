@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+#map {
+    flex: 1;
+    width: 100%;
+}
+
+.controls {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #34495e;
+    flex-shrink: 0;
+}
+
+.controls button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.controls button:hover {
+    background: #2980b9;
+}
+
+.controls button:active {
+    background: #21618c;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .controls {
+        padding: 10px;
+    }
+
+    .controls button {
+        flex: 1 1 calc(50% - 5px);
+        min-width: 120px;
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
